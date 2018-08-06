@@ -65,7 +65,7 @@ let operation =
 ```
 
 ## Requirements
-Xcode 9+, swift 4.0
+Xcode 9+, swift 4.0,
 No other special requirements 🍺
 
 ## Installation
