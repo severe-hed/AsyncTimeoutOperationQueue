@@ -22,7 +22,7 @@ pod 'AsyncTimeoutOperationQueue'
 
 ## Author
 
-severehed, severehed@gmail.com
+severehed
 
 ## License
 

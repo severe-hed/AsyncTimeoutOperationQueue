@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1D74BF2C257DAB0CC51BA1A5 /* Pods_AsyncTimeoutOperationQueue_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23A87AFEABBB09FB0340344A /* Pods_AsyncTimeoutOperationQueue_Example.framework */; };
+		3F46A3D1211886A80096752F /* AsyncTimeoutOperationQueueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F46A3D0211886A80096752F /* AsyncTimeoutOperationQueueTests.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
-		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		8E0A7296BC60A478B1B50656 /* Pods_AsyncTimeoutOperationQueue_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95B2B912D34365E5D287B87 /* Pods_AsyncTimeoutOperationQueue_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +29,8 @@
 
 /* Begin PBXFileReference section */
 		23A87AFEABBB09FB0340344A /* Pods_AsyncTimeoutOperationQueue_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsyncTimeoutOperationQueue_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		34AA3799F1C668337A0E7546 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		34AA3799F1C668337A0E7546 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		3F46A3D0211886A80096752F /* AsyncTimeoutOperationQueueTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncTimeoutOperationQueueTests.swift; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AsyncTimeoutOperationQueue_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AsyncTimeoutOperationQueue_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -39,12 +40,11 @@
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* AsyncTimeoutOperationQueue_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AsyncTimeoutOperationQueue_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6CDC99D09E76EDDD9F115223 /* Pods-AsyncTimeoutOperationQueue_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncTimeoutOperationQueue_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncTimeoutOperationQueue_Tests/Pods-AsyncTimeoutOperationQueue_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		6DFBB444AE3E9ABB145F4BE7 /* AsyncTimeoutOperationQueue.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AsyncTimeoutOperationQueue.podspec; path = ../AsyncTimeoutOperationQueue.podspec; sourceTree = "<group>"; };
+		6DFBB444AE3E9ABB145F4BE7 /* AsyncTimeoutOperationQueue.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AsyncTimeoutOperationQueue.podspec; path = ../AsyncTimeoutOperationQueue.podspec; sourceTree = "<group>"; };
 		A95B2B912D34365E5D287B87 /* Pods_AsyncTimeoutOperationQueue_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AsyncTimeoutOperationQueue_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D90119130F19F4DD37D4535F /* Pods-AsyncTimeoutOperationQueue_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncTimeoutOperationQueue_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncTimeoutOperationQueue_Example/Pods-AsyncTimeoutOperationQueue_Example.release.xcconfig"; sourceTree = "<group>"; };
-		E33C5A7728DB2DCE043B9149 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		E33C5A7728DB2DCE043B9149 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		EF5EA5E4D7D0D12868E6BEDE /* Pods-AsyncTimeoutOperationQueue_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncTimeoutOperationQueue_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncTimeoutOperationQueue_Tests/Pods-AsyncTimeoutOperationQueue_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F8E1575DA21A4523C94E0D37 /* Pods-AsyncTimeoutOperationQueue_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AsyncTimeoutOperationQueue_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AsyncTimeoutOperationQueue_Example/Pods-AsyncTimeoutOperationQueue_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -115,7 +115,7 @@
 		607FACE81AFB9204008FA782 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				607FACEB1AFB9204008FA782 /* Tests.swift */,
+				3F46A3D0211886A80096752F /* AsyncTimeoutOperationQueueTests.swift */,
 				607FACE91AFB9204008FA782 /* Supporting Files */,
 			);
 			path = Tests;
@@ -350,7 +350,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				3F46A3D1211886A80096752F /* AsyncTimeoutOperationQueueTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +434,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -479,6 +480,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

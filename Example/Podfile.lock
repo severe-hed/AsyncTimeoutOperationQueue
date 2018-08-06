@@ -1,0 +1,27 @@
+PODS:
+  - AsyncTimeoutOperationQueue (0.1.0)
+  - FBSnapshotTestCase (2.1.4):
+    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
+  - FBSnapshotTestCase/Core (2.1.4)
+  - FBSnapshotTestCase/SwiftSupport (2.1.4):
+    - FBSnapshotTestCase/Core
+
+DEPENDENCIES:
+  - AsyncTimeoutOperationQueue (from `../`)
+  - FBSnapshotTestCase (~> 2.1.4)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FBSnapshotTestCase
+
+EXTERNAL SOURCES:
+  AsyncTimeoutOperationQueue:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AsyncTimeoutOperationQueue: 3377f8a2a4848b816579aea915182db1e79da7b0
+  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
+
+PODFILE CHECKSUM: e4307b72d698dff735be8877665baaac29d12acc
+
+COCOAPODS: 1.5.3
