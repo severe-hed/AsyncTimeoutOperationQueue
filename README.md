@@ -5,11 +5,61 @@
 [![License](https://img.shields.io/cocoapods/l/AsyncTimeoutOperationQueue.svg?style=flat)](https://cocoapods.org/pods/AsyncTimeoutOperationQueue)
 [![Platform](https://img.shields.io/cocoapods/p/AsyncTimeoutOperationQueue.svg?style=flat)](https://cocoapods.org/pods/AsyncTimeoutOperationQueue)
 
-## Example
+## Usage
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Use as extension to regular queue
+
+```swift
+let queue = OperationQueue()
+
+  queue
+      .addAsyncOperation { (completion) in
+        //some async work here
+        //don't forget to call completion when it's done!
+        completion?()
+      }
+      .timeout(5)
+      .onTimeout {
+          //called only if operation cancelled by timeout
+      }
+      .onCompletionOrTimeout {
+          //called in both cases: timeout or success finish
+      }
+```
+If you want to set default timeout for all operations in this queue, simply create AsyncTimeoutOperationQueue
+```swift
+let queue = AsyncTimeoutOperationQueue()
+queue.defaultTimeout = 10
+
+  queue
+      .addAsyncOperation { (completion) in
+        //some async work here
+        //don't forget to call completion when it's done!
+        completion?()
+      }
+      .timeout(5) //you still able to override default timeout
+      .onTimeout {
+          //called only if operation cancelled by timeout
+      }
+      .onCompletionOrTimeout {
+          //called in both cases: timeout or success finish
+      }
+```
+
+Also you can create AsyncBlockOperation itself or inherit it
+```swift
+let operation =
+            AsyncBlockOperation(block: { (completion) in
+                completion?()
+            },
+            timeout: 30,
+            onTimeout: {
+                                    
+            })
+```
 
 ## Requirements
+No special requirements 🍺
 
 ## Installation
 
