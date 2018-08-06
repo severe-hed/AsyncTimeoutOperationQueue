@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AsyncTimeoutOperationQueue_Example' do
+  pod 'AsyncTimeoutOperationQueue', :path => '../'
+
+  target 'AsyncTimeoutOperationQueue_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
