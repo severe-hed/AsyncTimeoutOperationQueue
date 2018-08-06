@@ -10,6 +10,8 @@
 Use as extension to regular queue
 
 ```swift
+import AsyncTimeoutOperationQueue
+
 let queue = OperationQueue()
 
   queue
@@ -28,6 +30,8 @@ let queue = OperationQueue()
 ```
 If you want to set default timeout for all operations in this queue, simply create AsyncTimeoutOperationQueue
 ```swift
+import AsyncTimeoutOperationQueue
+
 let queue = AsyncTimeoutOperationQueue()
 queue.defaultTimeout = 10
 
@@ -48,6 +52,8 @@ queue.defaultTimeout = 10
 
 Also you can create AsyncBlockOperation itself or inherit it
 ```swift
+import AsyncTimeoutOperationQueue
+
 let operation =
             AsyncBlockOperation(block: { (completion) in
                 completion?()
