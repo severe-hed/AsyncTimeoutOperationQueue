@@ -17,7 +17,7 @@ open class AsyncTimeoutOperationQueue: OperationQueue {
     open var defaultTimeout: TimeInterval?
     
     @discardableResult override open func addAsyncOperation(_ block: AsyncOperationBlock!) -> AsyncTimeoutOperation {
-        let operation = AsyncTimeoutOperation(block: block, defaultTimeout, nil)
+        let operation = AsyncTimeoutOperation(block: block, timeout: defaultTimeout, onTimeout: nil)
         addOperation(operation)
         return operation
     }
@@ -25,7 +25,7 @@ open class AsyncTimeoutOperationQueue: OperationQueue {
 
 public extension OperationQueue {
     @objc @discardableResult public func addAsyncOperation(_ block: AsyncOperationBlock!) -> AsyncTimeoutOperation {
-        let operation = AsyncTimeoutOperation(block: block, nil, nil)
+        let operation = AsyncTimeoutOperation(block: block, timeout: nil, onTimeout: nil)
         addOperation(operation)
         return operation
     }
@@ -48,7 +48,7 @@ open class AsyncTimeoutOperation: Operation {
         timeoutTimer = nil
     }
     
-    public init(block: AsyncOperationBlock!, _ timeout: TimeInterval?, _ onTimeout: AsyncOperationTimeoutBlock?) {
+    public init(block: AsyncOperationBlock!, timeout: TimeInterval? = nil, onTimeout: AsyncOperationTimeoutBlock? = nil) {
         self.block = block
         self.timeoutSeconds = timeout
         self.timeoutBlock = onTimeout
