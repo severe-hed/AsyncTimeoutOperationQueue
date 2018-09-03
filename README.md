@@ -4,6 +4,7 @@
 [![Version](https://img.shields.io/cocoapods/v/AsyncTimeoutOperationQueue.svg?style=flat)](https://cocoapods.org/pods/AsyncTimeoutOperationQueue)
 [![License](https://img.shields.io/cocoapods/l/AsyncTimeoutOperationQueue.svg?style=flat)](https://cocoapods.org/pods/AsyncTimeoutOperationQueue)
 [![Platform](https://img.shields.io/cocoapods/p/AsyncTimeoutOperationQueue.svg?style=flat)](https://cocoapods.org/pods/AsyncTimeoutOperationQueue)
+[![Beerpay](https://beerpay.io/severehed/AsyncTimeoutOperationQueue/badge.svg?style=flat)](https://beerpay.io/severehed/AsyncTimeoutOperationQueue)
 
 ## Usage
 
@@ -84,8 +85,3 @@ severehed
 ## License
 
 AsyncTimeoutOperationQueue is available under the MIT license. See the LICENSE file for more info.
-
-## Support on Beerpay
-Hey dude! Help me out for a couple of :beers:!
-
-[![Beerpay](https://beerpay.io/severehed/AsyncTimeoutOperationQueue/badge.svg?style=beer-square)](https://beerpay.io/severehed/AsyncTimeoutOperationQueue)  [![Beerpay](https://beerpay.io/severehed/AsyncTimeoutOperationQueue/make-wish.svg?style=flat-square)](https://beerpay.io/severehed/AsyncTimeoutOperationQueue?focus=wish)
