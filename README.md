@@ -84,3 +84,8 @@ severehed
 ## License
 
 AsyncTimeoutOperationQueue is available under the MIT license. See the LICENSE file for more info.
+
+## Support on Beerpay
+Hey dude! Help me out for a couple of :beers:!
+
+[![Beerpay](https://beerpay.io/severehed/AsyncTimeoutOperationQueue/badge.svg?style=beer-square)](https://beerpay.io/severehed/AsyncTimeoutOperationQueue)  [![Beerpay](https://beerpay.io/severehed/AsyncTimeoutOperationQueue/make-wish.svg?style=flat-square)](https://beerpay.io/severehed/AsyncTimeoutOperationQueue?focus=wish)
