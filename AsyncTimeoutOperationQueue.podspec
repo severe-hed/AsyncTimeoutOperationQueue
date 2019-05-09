@@ -18,9 +18,9 @@ Pod::Spec.new do |s|
   s.author           = 'severehed'
   s.source           = { :git => 'https://github.com/severehed/AsyncTimeoutOperationQueue.git', :tag => s.version.to_s }
 
-  s.swift_version = '4.0'
+  s.swift_version = '5.0'
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '9.3'
   s.osx.deployment_target  = '10.10'
 
   s.ios.framework  = 'Foundation'
