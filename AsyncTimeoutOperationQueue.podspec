@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'AsyncTimeoutOperationQueue'
-  s.version          = '0.4'
+  s.version          = '0.5'
   s.summary          = 'Async NSOperation with timeouts'
 
   s.description      = 'Async NSOperation with timeout, onTimeout and onCompletion calls'
